@@ -6,7 +6,7 @@ With this much time spent, I could do many things. It might be a test to see if 
 
 Without further ado,let the learning begin :)
 
-First book: "Object-Oriented Software Engineering" by Lethbridge
+First book: "Software Engineering" by Sommerville
 
 Web version: https://ifs.host.cs.st-andrews.ac.uk/Books/SE9/
 
