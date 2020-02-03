@@ -49,5 +49,26 @@ MY: From ACM and the IEEE, because of their roles in developing software system,
 * Rational Unified Process: SKIM
 
 # Chapter 3: Agile software development
+* For some types of software, such as safety-critical control system, where a complete analysis of the system is essential, a plan-driven approach is the right one.
+* however, in a fast-moving business environment, this can cause real problem
+* in the 1980 and early 1990, there was a widespread view that the best way to achieve better software was through careful project planning, formalized quality assurance, the use of analysis and design methods supported by CASE tools, and controlled and rigorous software development processes. This view came from the software engineering community that was responsible for developing large, long-lived software system such as aerospace and government systems.
+* However, when this heavyweight, plan-driven development approach is applied to small and medium-sized business systems, the overhead involved is too large.
+* Dissatisfaction with these heavyweight approach to software engineering led to a number of software developers in the 1990s to propse new "agile methods"
+* Agile manifesto: When are uncovering better ways of developing software by doing it and helping others do it. Thrugh this work we have come to value: Individuals and interactions over processes and tools; working software over comprehensive documentation; customer collaboration over contract negotiation; responding to change over following a plan
+* In practice, the principles underlying agile methods are sometimes difficult to realize because: 1. although the idea of customer involvement in the development process is an attractive one, its success depends on having a customer who is willing and able to spend time with the development team and who can represent all system stakeholders. 2: individual team members may not have suitable personalities for the intense involvement that is typical of agile methods, and therefore not interact well with other team members; 3. prioritizing changes can be extremely difficult, especially in system for which there are many stakeholders. Typically, each stakeholders gives different priorities to different changes; 4. maintaining simplicity requires extra work. Under pressure from delivery schedules, the team members may not have time to carry out desirable system simplifications.
 
-Page 57
+#### Plan-driven and agile development
+1. Is it important to have a very detail specification and design before moving to implementation? If so, you probably need to use a plan-driven approach
+2. Is an incremental delivery strategy, where you deliver the software to customers and get rapid feedback from them, realisitic? If so, consider using agile methods.
+3. How large is the system that is being developed? Agile methods are most effective when the system can be developed with a small co-located team who can communicate informally. This may not be possible for large system that require larger development teams so a plan-driven approach may have to be used.
+4. What type of system is being developed? System that require a lot of analysis before implementation(e.g. real-time system with complex timing requirements) usually need a fairly detailed design to carry out this analysis. A plan-driven approach may be best in those circumstances.
+5. What is the expected system lifetime? Long-lifetime system may require more design documentation to communicate the original intentions of the system developers to the support team. However, supporters of agile methods rightly argue that documentation is frequently not kept up to date and it is not of much use for long-term system maintenance.
+6. What technologies are available to support system development? Agile methods often reply on good tools to keep track of an evolving design. If you are developing a system using an IDE that does not have good tools for program visualization and analysis, then more design documentation may be required.
+7. How is the development team organized? If the development team is distributed or if part of the development is being outsourced, then you may need to develop design documents to communicate across the development teams. You may need to plan in advance what these are.
+8. Are there cultural issues that may affect the system development? Traditional engineering organizations have a culture of plan-based development, as this is the norm in engineering. This usually requires extensive design documentation, rather than the informal knowledge used in agile processes.
+9. How good are the designers and programmers in the development team? It is sometimes argued that agile methods require higher skill levels than plan-based approaches in which programmers simply translate a detailed design into code. If you have a team with relatively low skill levels, you may need to use the best people to develop the design, with others responsible for programming.
+10. Is the system subject to external regulation? If a system has to be approved by an external regulator (e.g., the Federal Aviation Authority [FAA] approve software that is critical to the operation of an aircraft) then you will probably be required to produce detailed documentation as part of the system safety case.
+
+#### Extreme programming
+
+page 64
