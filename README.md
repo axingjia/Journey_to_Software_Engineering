@@ -70,5 +70,57 @@ MY: From ACM and the IEEE, because of their roles in developing software system,
 10. Is the system subject to external regulation? If a system has to be approved by an external regulator (e.g., the Federal Aviation Authority [FAA] approve software that is critical to the operation of an aircraft) then you will probably be required to produce detailed documentation as part of the system safety case.
 
 #### Extreme programming
+SKIM 
 
-page 64
+#### Paired programming 
+SKIM 
+
+SKIP
+
+# Chapter 4: Requirement Engineering
+* The process of finding out, analyzing, documenting and checking these services and constraints is called requirements engineering
+* User requirement and system requirement: SKIM
+* Non functionale requirement: reliability, response time, and store occupancy, performance, security, availability
+* Metrics for specifying non-fnctional requirement: speed: processed transaction/second; user/event response time; screen refresh time; 2. size:Mbytes, number of ROM chips; 3. ease of use: training time, number of help frames; 4. reliability: mean time to failure, probability of unavailability, rate of failure occurance, availability; 5. robustness: time to restart after failure; percentage of events causing failure; probability of data corruption on failure; portability: percentage of target dependent statements, number of target system
+* Requirement Specification
+* use open-ended and closed-ended question, scenerio, use cases
+* Requirement Validation. The cost of fixing a requirement problem by making a system change is usually much greater than repairing design or coding erros. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore the system must then be re-tested.
+* During the requirement validation process, different types of checks should be carried out on the requirements in the requirements document. These check include: 1. validation check: check if there are additional or different functions than we think. 2. Consistency check. Requirement in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. Completeness check: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism. Make sure the requirement can actually be implemented. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable.
+* There are a number of requirement validation techniques that can be used individually or in conjunction with one another: 1. requirements review. The requirements are analyzed systematically by a team of reviewers who check for errors and inconsistencies. 2. prototyping. In this approach to validation, an executable model of the system in question is demonstrated to end-users and customers. They can experiment with this model to see if it meets their real needs. 3. Test-case generation. Requirements should be testable. If the tests for the requirement are devised as part of the validation process, this often reveals requirements problems. If a test is difficult or impossible to design, this usually means that the requirements will be difficult to implement and should be reconsidered. Developing tests from the user requirements before any code is written is an integral part of extreme programming.
+* Requirement management: SKIP
+
+# Chapter 5: System Modeling
+* System modeling is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.
+* You may develop different models to represent the system from different perspectives. For example, 1. an external perspective, where you model the context or environment of the system. 2. An interaction perspective where you model the interactions between a system and its environment or between the components of a system. 3. A structural perspective, where you model the organization of a system or the structure of the data that is processed by the system. 4. A behavioral perspective, where you model the dynamic behavior of the system and how it responds to events.
+* Krutchen's 4+1 iew will be discussed in Chapter 6.
+* Activity diagram, user case diagram, sequence diagram, class diagram, state diagram
+
+###### Context Model
+* At an early stage in the specification of a system, you should decide on the system boundaries. This involves working with system stakeholders to decide what functionality should be included in the system and what is provided by the system's environment.
+
+###### Interactino Models 
+* Modeling system to system interaction highlights the communication problems that may arise. Modeling component interaction helps us understand if a proposed system structure is likely to deliver the require system performance and dependability
+* Use case modeling 
+* sequence diagram
+
+###### Structural Models 
+* Class diagram
+* generalization empty arrowhead
+* Aggregation: diamond arrowhead
+
+###### Behavioral Models
+* Data-driven modeling (data-flow model)
+* Event-driven modeling
+* State diagram
+
+### Model-driven engineering
+SKIP 
+
+# Chapter 6: Architectural Design 
+* Architectural design is concerned with understanding how a system should be organized and designing the overall structure of that system.
+* In the model of the software development process, architectural design is the first stage in the software design process. It is the critical link between design and requirements engineering
+* SKIP
+
+# Chapter 7: Design and Implementation
+
+page 177
