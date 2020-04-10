@@ -122,5 +122,15 @@ SKIP
 * SKIP
 
 # Chapter 7: Design and Implementation
+SKIM Nothing important
+
+# Chapter 8: Software Testing
+"Testing can only show the presence of erros, not their absence"
+* SKIP
+
+# Chapter 9: Software Evolution
+SKIP 
+
+# Chapter 10: Sociotechnical System
 
 page 177
