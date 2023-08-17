@@ -141,10 +141,67 @@ Figure 1.2. Essential attributes of good software
 
 * Of course, the boundaries between these system types are blurred. If you develop a game for a mobile phone, you have to take into account the same constraints (power, hardware interaction) as the developers of the phone software. Batch processing systems are often used in conjunction with web-based systems. For example, in a company, travel expense claims may be submitted through a web application but processed in a batch application for monthly payment.
 * You use different software engineering techniques for each type of system because the software has quite different characteristics. For example, an embedded control system in an automobile is safety-critical and is burned into ROM when installedin  the vehicle. It is therefore very expensive to change. Such a system needs very extensive verification and validation so that the chances of having to recall cars after sale to fix software probelms are minimized. user interaction is minimal (or perhaps nonexistent) so there is no need to use a development process that relies on user interact prototyping.
+* For a web-based system, an approach based on iterative development and delivery may be appropriate, wit the system being composed of reusable components. However, such an approach may be impractical for **a system of systems, where detailed specifications of the system interaction have to be specified in advance so that each system can be separately developed.**
+* Nevertheless, there are software engineering fundamentals that apply to all types of software system:
 
-page 12
+1. They should be developed using a managed and understood development process. The organization developing the software should plan the development process and have clear ideas of what will be produced and when it will be completed. Of course, different processes are used for different types of software.
+2. Dependability and performance are important for all types of systems. Software should behave as expected, without failures and should be available for use when it is required. It should be safe in its operation and, as far as possible, should be secure against external attack. The system should perform efficiently and should not waste resources.
+3. Understanding and managing the software specification and requirements (what the software should do) are important. You have to know what different customers and users of the system expect from it and you have to manage their expectations so that a useful system can be delivered within budget and to schedule.
+4. You should make as effective use as possible of existing resources. This means that, where appropriate, you should reuse software that has already been developed rather than write new software.
 
-page 10
+* These fundamental notions of process, dependendability, requirements, management, and reuse are important themes of this book. Different methods reflect them in different ways but they underlie all professional software development. 
+* You should notice that these fundamentals do not cover implementation and programming. I don't cover specific programming techniques in this book because these vary dramatically from one type of system to another. For example, a scripting lanaguge such as Ruby is used for web-based system programming but would be completely inappropriate for embedded systems engineering.
+
+## 1.1.3 Software engineering and the Web
+* The development of the World Wide Web has had a profound effect on all of our lives. Initially, the Web was primarily a university accessible information store and it had little effect on software systems. These systems ran on local computers and were only accessible from within an organization. Around 2000, the Web started to evolve and more and more functionality was added to browsers. This meant that web-based systems could be developed where, instead of a special-purpose user interface, these systems could be accessed using a web browser. This led to the development of a vast range of new system products that delivered innovative serices, accessed over the Web. These are often funded by adverts that are displayed on the user's screen and do not involve direct payment from users.
+* As well as these system products, the development of web browsers that could run small programs and do some local processing led to an evolution in business and organizational software. Instead of writing software and deploying it on users' PCs, the software was deployed on a web server. This made it much cheaper to change also reduced costs, as user interface development is particularly expensive. Consequently, wherever it has been possible to do so, many businesses have moved to web-based interaction with company software systems.
+* The next stage in the development of web-based systems was the notion of web services. Web services are software components that deliver specific, useful functionality and which are accessed over the Web. Applications are constructed by integrating these web services, which may be provided by different companies. In principle, this linking can be dynamic so that an application may use different web services each time that it is executed. I cover this approach to software development in Chapter 19.
+* In the last few years, the notion of "software as a service" has been developed. It has been proposed that software will not normally run on local computers but will run on "computing clouds" that are accessed over the Internet. If you use a service such as web-based mail, you are using a cloud-based system. A computing cloud is a huge number of linked computer systems that is shared by many users. Users do not buy software but pay according to how much the software is used or are given free access in return for watching adverts that are displayed on their screen.
+* The advent of the web, therefore, has led to a significant change in the way that business software is organized. Before the web, business applications were mostly monolithic, single programs running on single computers or computer clusters. Communications were local, within an organization. Now, software is highly distributed, sometimes across the world. Business applications are not programmed from scratch but involve extensive reuse of components and programs.
+* This radical change in software organization has, obviously, led to changes in the ways that web-based systems are engineered. For example:
+
+1. Software reuse has become the dominant approach for constructing web-based systems. When building these systems, you think about how you cacn assemble them from pre-existing software components and systems.
+2. **It is now generally recognized that it is impractical to specify all the requirements for such systems in advance. Web-based systems should be developed and delivered incrementally.**
+* User interfaces are constrained by the capabilities of web browsers. Although technologies such as AJAX mean that rich interfaces can be created within a web browser, these technologies are still difficult to use. Web forms with local scripting are more commonly used. Application interfaces on web-based systems are often poorer than the specially designed user interfaces on PC system products.
+
+* The fundamental ideas of software engineering, discussed in the previous section, apply to web based software in the same way that they apply to other types of software system. Experience gained with large system development in the 20th century is still relevant to web-based software.
+
+## 1.2.  Software engineering ethics
+* Like other engineering disciplines, software engineering is carried out within a social and legal framework that limits the freedom of people working in that area. As a software engineer, you must accept that your job involves wider responsibilities than simply the application of technical skills. You must also behavbe in an ethical and morally responsible way if you are to be respected as a professional engineer.
+* It goes without saying that you should uphold normal standards of honesty and integrity. You should not use your skills and abilities to behave in a dishonest way or in a way that will bring disrepute to the software engineering profession. However, there are areas where standards of acceptable behavior are not bound by laws but by the more tenuous notion of professional responsibility. Some of these are:
+
+1. Confidentiality. You should normally respect the confidentiality of your employers or clients irrespective of whether or not a formal confidentiality agreement has been signed.
+2. Competence. You should not misrepresent your level of competence. You should not knowingly accept work that is outside your competence.
+3. Intellectual property rights. You should be aware of local laws governing the use of intellectual property such as patents and copyright. You should be careful to ensure that the intellectual property of employers and clients is protected.
+4. Computer misuse. You should not use your technical skills to misuse other people's computers. Computer misuse ranges from relatively trivial (game playing on an employer's machine, say) to extremely serious (dissemination of virus or other malware)
+
+
+```
+Software Engineering Code of Ethics and Professional Practice
+
+ACM/IEEE-CS Joint Task Force on Software Engineering Ethics and Professional Practices
+
+PREAMBLE
+* The short version of the code summarizes aspirations of a high level of the abstraction; the clauses that are included in teh full version give examples and details of how these aspirations change the way we act as software engineering professionals. Without the aspirations, the details can become legalistic and tedious; without the details, the aspirations can be high sounding but empty; together the aspirations and the details for a cohesive code.
+* Software engineers shall commit themselves to making the analysis, specification, design, development, testing and maintenance of software a beneficial and respected profession. In accordance with their commitment to the health, safety and welfare of the public, software engineers shall adhere to the following Eight Principle
+
+1. PUBLIC--Software engineers shall act consistently with the public interest.
+2. CLIENT AND EMPLOYER--Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+3. PRODUCT--Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+4. JUDGMENT--Software engineers shall maintain integrity and independence in their professional judgment.
+5. MANAGEMENT--Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+6. PROFESSION--Software engineers shall advance the integrity and reputation of the profession consistent with the public interest
+7. COLLEAGUES--Software engineers shall be fair to and supportive of their colleagues.
+8. SELF--Softwware engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+```
+
+* Professional societies and institutions have an important role to play in setting ethical standards. Organizations such as the ACM, **the IEEE (institute of Electrical and Electronic Engineers)**, and the British Computer Society publish a code of professional conduct or code of ethics. Members of these organizations understake t ofollow that code when they sign up for membership. These codes of conduct are generally concerned with fundamental ethical behavior.
+* Professional associations, notably the ACM and the IEEE, have cooperated to produce a joint code of ethics and professional practice. This code exists in both a short form, shown in Figure 1.3, and a longer form that adds detail and substance to the shorter version. The rationale behind this code is summarized in the first two paragraph of the longer form:
+
+                Computers have a central and growing role in commerce, industry, government, medicine, education, entertainment and society at large. Software engineers are those who contribute by direct participation or by teaching, to the analysis, specification, design, development, certification, maintenance and testing of software system. Because of their roles in developing software systems, software engineers have significant opportunities to do good or cause harm, to enable others to do good or cause harm, or to influence others to do good or cause harm. To ensure, as much as possible, that their efforts will be used for good, software engineers must commit themselves to making software engineering a beneficial and respected profession. In accordance with that commitment, software engineers shall adhere to the following Code of Ethics and Professional Practice.
+
+
+page 16
 
 
 
