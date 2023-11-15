@@ -278,6 +278,39 @@ PREAMBLE
 
 # Chapter 2: Software Processes
 
+Objectives
+* The objective of this chapter is to introduce you to the idea of a software process--a coherent set of activities for software production. When you have read this chapter you will:
+
+* understand the concepts of software processes and software process models;
+* have been introduced to three generic software process models and when they might be used;
+* know about the fundamental process activities of software requirements engineering, software development, testing, and evolution;
+* understand why processes should be organized to cope with changes in the software requirements and design;
+* understand how the Rational Unified Process integrates good software engineering practice to create adaptive software processes.
+
+* A software process is a set of related activties taht leads to the production of a software product. These activities may involve the development of software from scratch in a standard programming language like Java or C. However, business applications are not necessarily developed in this way. New business software is now often developed by extending and modifying existing systems or by configuring and integrating off-the-shelf software or system components.
+* There are many different software processes but all must include four activities that are fundamental to software engineering:
+
+1. Software specification. The functionality of the software and constraints on its operation must be defined.
+2. Software design and implementation. The software to meet the specification must be produced.
+3. Software validation. The software must be validated to ensure that it does what the customer wants
+4. Software evolution. The software must evolve to meet changing customer needs.
+
+* In some form, these activities are part of all software processes. In practice, of course, they are complex activities in themselves and include sub-activities such as requirements validation, architectural design, unit testing, etc. There are also supporting process activities such as documentation and software configuration management.
+* When we describe and discuss processes, we usually talk about the activities in these processes such as speficying a data model, designing a user interface, etc., and the ordering of these activities. However, as well as activities, process descriptions may also include:
+
+1. Products, which are the outcomes of a process activity. For example, the outcome of the activity of architectural design may be a model of the software architecture.
+2. Roles, which reflect the responsibilities of the people involved in the process. Examples of roles are project manager, configuration manager, programmer, etc.
+3. Pre- and post-conditions, which are statements that are true before and after a process activity has been enacted or a product produced. For example, before architectural design begins, a pre-condition may be that all requirements have been approved by the customer; after this activity is finished, a post-condition might be that the UML models describing the architecture have been reviewed.
+
+* Software processes are complex and, like all intellectural and creative processes, rely on people making decisions and judgments. There is no ideal process and most organizations have developed their own software development processes. Processes have evolved to take advantage of the capabilities of the people in an organization and the specific characteristics of the systems taht are being developed. For some systems, such as critical systems, a very structured development process is required. For business systems, with rapidly changing requirements, a less formal, flexible process is likely to be more effective.
+* Sometimes, software processes are categorized as either plan-driven or agile processes. Plan-driven processes are processes where all of the process activities are planned in advance and progress is measured against this plan. In agile processes, which I discuss in Chapter 3, planning is incremental and it is easier to change the process to reflect changing customer requirements. As Boehm and Turner (2003) discuss, each approach is suitable for different types of software. Generally, you need to find a balance between plan-driven and agile processes.
+* Although there is no "ideal" software process, there is scope for improving the software process in many organizations. Processes may include outdated techniques or may not take advantage of the best practice in industrial software engineering. Indeed, many organizations still do not take advantage of software engineering methods in their software development.
+* Software processes can be improved by process standardization where the diversity in software processes across an organization is reduced. This leads to improved communication and a reduction in training time, and makes automated process support more economical. Standardization is also an important first step in introducin new software engineering methotds and techniques and good software engineering practice. I discuss software process improvement in more detail in Chapter 26..
+
+## 2.1 Software process models
+* As I explain in Chapter 1, a software process model is a simplified representation of a software process. Each process model represents a process from a particular perspective, and thus provides only partial information about the process. For example, a process activity model shows the activities and their sequence but may not show the roles of the people involved in these activities. In this section, I introduce a number of very general process models (sometimes called "process paradigms") and present these from an architectural perspective. That is, we see the framework of the process but not the detail of specific activities.
+
+SKIM
 
 
 
