@@ -309,8 +309,40 @@ Objectives
 
 ## 2.1 Software process models
 * As I explain in Chapter 1, a software process model is a simplified representation of a software process. Each process model represents a process from a particular perspective, and thus provides only partial information about the process. For example, a process activity model shows the activities and their sequence but may not show the roles of the people involved in these activities. In this section, I introduce a number of very general process models (sometimes called "process paradigms") and present these from an architectural perspective. That is, we see the framework of the process but not the detail of specific activities.
+* These generic models are not definitive descriptions of software processes. Rather, they are abstractions of the process that can be used to explain different approaches to software development. You can think of them as process frameworks that may be extended and adapted to create more specific software engineering processes.
+* The process model that I cover here are:
 
-SKIM
+1. The waterfall model. This takes the fundamental process activities of specification, development, validation, and evolution and represents them as separate process phases such as requirements specification, software design, implementation, testing, and so on.
+2. Incremental development. This approach interleaves the activities of specification, development, and validation. The system is developed as a series of versions (increments), with each version adding functionality to the previous version.
+3. Reuse-oriented software engineering. This approach is based on the existence of a significant number of reusable components. The system development process focuses on integrating these components into a system rather than developing them from scratch.
+
+* These models are not mutually exclusive and are often used together, especially for large systems development. For large systems, it makes sense to combine some of the best features of the waterfall and the incremental development models. You need to have information about the essentail system requirements to design a software architecture to support these requirements. You can not develop this incrementally. Sub-system within a larger system may be developed using different approaches. Parts of the system that are well understood can be specified and developed using a waterfall-based process. Parts of the system which are difficult to specify in advance, such as the user interface, should always be developed using an incremental approach.
+
+### 2.1.1. The Waterfall model
+* The first published model of the software development process was derived from more general system engineering processes. This model is illustrated in Figure 2.1. Because of the cascade from one phase to another, this model is known as the "waterfall model" or software life cycle. The waterfall model is an example of a plan-driven process--in principle, you must plan and schedule all of the process activities before starting work on them.
+* The principal stages of the waterfall model directly reflect the fundamental development activities:
+
+1. Requirements analysis and definition. The system's services, constraints, and goals are established by consultation with system users. They are then defined in detail and serve as a system specification.
+2. System and software design. The system design process allocates the requirements to either hardware or software systems by establishing an overall system architecture. Software design involves identifying and describing the fundamental software system abstractions and their relationships.
+3. Implementation and unit testing. During this stage, the software design is realized as a set of programs or program units. unit testing involves verifying that each unit meets its specification.
+4. Integration and system testing. The individual program units or programs are integrated and tested as a complete system to ensure that the software requirements have been met. After testing, the software system is delivered to the customer.
+5. Operation and maintenance. Normally (although not necesssarily), this is the longest life cycle phase. The system is installed and put into practical use. Maintenance involves correcting erros which were not discovered in earlier stages of the life cycle, improving the implementation of system units and enhancing the system's services as new requirements are discovered.
+
+* In principle, the result of each phase is one or more documents that are approved ('signed off'). The following phase should not start until the previous phase has finished. In practice, these stages overlap and feed information to each other. During design, problems with requirements are identified. During coding, design problems are found and so on. The software process is not a simple linear model but involves feedback from one phase to another. Documents produced in each phase may then have to be modified to reflect the changes made.
+* Because of the costs of producing and approving documents, iterations can be costly and involve significant rework. Therefore, after a small number of iterations, it is normal to freeze parts of the development, such as the specification, and to continue with the later development stages. Problems are left for later resolution, ignored, or programmed around. This premature freezing of requirement may mean that the system won't do what the user wants. it may also lead to badly structured systems as design problems are circumvented by implementation tricks.
+* During the final life cycle phase (operation and maintenance) the software is put into use. Errors and omissions in the original software requirements are discovered. Program and design erros emerge and the need for new functionality is identified. The system must therefore evolve to remain useful. Making these changes (software maintenace) may involve repeating previous process stages.
+
+```
+Cleanroom software engineering
+* An example of a formal development process, originally developed by IBM, is the Cleanroom process, in the Cleanroom process each software increment is formally specified and this specification is transformed into an implementation. Software correctness is demonstrated using a formal approach. There is no unit testing for defects in the process and the system testing is focused on assesing the system' reliability.
+* The objective of the Cleanroom process is zero-defects software so that delivered system have a high level of reliability.
+```
+
+page 32
+
+SKIM for the whole chapter.
+
+# Chapter 3: Agile software development
 
 
 
